@@ -1,0 +1,103 @@
+<!-- Responsive Web Design -->
+<!DOCTYPE html>
+<html>
+<head>
+<!--  
+Set Viewport 
+      Digunakan untuk menyetel viewport halaman web yang akan memberikan instruksi browser tentang cara mengontrol dimensi dan penskalaan halaman. 
+-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<!-- Media Query -->
+<style type="text/css">
+        * {
+      box-sizing: border-box;
+    }
+    .menu {
+      float: left;
+      width: 20%; /*lebar default*/
+    }
+    .menuitem {
+      padding: 8px;
+      margin-top: 7px;
+      border-bottom: 1px solid #f1f1f1;
+    }
+    .main {
+      float: left;
+      width: 60%; /*lebar default*/
+      padding: 0 20px;
+      overflow: hidden;
+    }
+    .right {
+      background-color: lightblue;
+      float: left;
+      width: 20%;
+      padding: 10px 15px;
+      margin-top: 7px;
+    }
+
+    /* Media query dengan breakpoint 800px: */
+    @media only screen and (max-width:800px) {
+      /* Untuk tablet: */
+      .main {
+        width: 80%; /* Lebar 80%, ketika viewport 800px atau kurang */
+        padding: 0;
+      }
+      .right {
+        width: 100%; /* Lebar 100%, ketika viewport 800px atau kurang */
+      }
+    }
+
+    /* Media query dengan breakpoint 500px: */
+    @media only screen and (max-width:500px) {
+      /* Untuk handphone: */
+      .menu, .main, .right {
+        width: 100%; /* Lebar 100%, ketika viewport 500px atau kurang */
+      }
+    }
+</style>
+</head>
+
+
+<body style="font-family:Verdana;">
+
+<div style="background-color:#f1f1f1;padding:15px;">
+  <h1><a href="index.html">CV. Inbizz</a></h1>
+  <h3>Teknlologi Untuk Masa Depan</h3>
+</div>
+
+<div style="overflow:auto">
+  <div class="menu">
+    <div class="menuitem"><a href="big_data.html">Big Data</a></div>
+    <div class="menuitem">Konsultan TI</div>
+    <div class="menuitem">Mobile</div>
+    <div class="menuitem">R & D</div>
+  </div>
+
+  <div class="main">
+    <h2>Solusi Big Data di Indonesia</h2>
+    <p>Big data adalah sebuah istilah yang digunakan untuk menggambarkan set data dalam ukuran yang sangat besar yang mungkin secara komputasi dianalisis untuk menemukan pola, trend, asosiasi, terutama dalam hubungannya terhadap interaksi dan tindakan manusia.</p>
+
+    <!-- 
+    Responsive Image
+    Gambar diskalakan dengan baik agar sesuai dengan ukuran browser apa pun. Properti lebar CSS diset ke 100%, sehingga gambar akan responsif dengak penskalaan vertikal dan horisontal
+     -->
+    <img src="gedung.jpg" style="width:100%">
+
+
+  </div>
+
+  <div class="right">
+    <h2>Visi dan Misi</h2>
+    <p>Menjadi Konsultan Teknologi Informasi, Solusi Outsource dan Penyedia Dukungan Operasional 'High End' & Middle End ', yang terbukti menjamin' Kesuksesan Pelanggan '
+    </p>
+    <h2>Alamat</h2>
+    <p>CV. Inbizz<br>
+       Jl. Diponegoro 12, Yogyakarta
+    </p>
+  </div>
+</div>
+
+</body>
+</html>

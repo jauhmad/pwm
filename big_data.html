@@ -1,0 +1,94 @@
+<!-- Responsive Web Design -->
+<!DOCTYPE html>
+<html>
+<head>
+<!--  
+Set Viewport 
+      Digunakan untuk menyetel viewport halaman web yang akan memberikan instruksi browser tentang cara mengontrol dimensi dan penskalaan halaman. 
+-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<!-- Media Query -->
+<style type="text/css">
+        * {
+      box-sizing: border-box;
+    }
+    .menu {
+      float: left;
+      width: 20%; /*lebar default*/
+    }
+    .menuitem {
+      padding: 8px;
+      margin-top: 7px;
+      border-bottom: 1px solid #f1f1f1;
+    }
+    .main {
+      float: left;
+      width: 60%; /*lebar default*/
+      padding: 0 20px;
+      overflow: hidden;
+    }
+    .right {
+      background-color: lightblue;
+      float: left;
+      width: 20%;
+      padding: 10px 15px;
+      margin-top: 7px;
+    }
+
+    /* Media query dengan breakpoint 800px: */
+    @media only screen and (max-width:800px) {
+      /* Untuk tablet: */
+      .main {
+        width: 80%; /* Lebar 80%, ketika viewport 800px atau kurang */
+        padding: 0;
+      }
+      .right {
+        width: 100%; /* Lebar 100%, ketika viewport 800px atau kurang */
+      }
+    }
+
+    /* Media query dengan breakpoint 500px: */
+    @media only screen and (max-width:500px) {
+      /* Untuk handphone: */
+      .menu, .main, .right {
+        width: 100%; /* Lebar 100%, ketika viewport 500px atau kurang */
+      }
+    }
+</style>
+</head>
+
+
+<body style="font-family:Verdana;">
+
+<div style="background-color:#f1f1f1;padding:15px;">
+  <h1><a href="index.html">CV. Inbizz</a></h1>
+  <h3>Teknlologi Untuk Masa Depan</h3>
+</div>
+
+<div style="overflow:auto">
+
+
+  <div class="main">
+    <h2>Solusi Big Data di Indonesia</h2>
+
+    <img src="big_data.jpg" style="width:100%">
+    <p>
+Apa itu Big Data?
+Big data adalah sebuah istilah yang digunakan untuk menggambarkan set data dalam ukuran yang sangat besar yang mungkin secara komputasi dianalisis untuk menemukan pola, trend, asosiasi, terutama dalam hubungannya terhadap interaksi dan tindakan manusia</p>
+
+<p>
+Kumpulan data ini demikian besar dan kompleksnya sehingga aplikasi pemrosesan data tradisional tidak mampu memprosesnya. Pemrosesan ini termasuk analisis, pencarian, pengumpulan, pembagian, penyimpanan, transfer, visualisasi, query, pembaharuan data dan kerahasiaan informasi. Istilah Big Data secara sederhana mengacu ke predictive analytics, user behavior analysis dan metode analytics data yang mengambil data dalam bentuk terstruktur maupun tidak.
+</p>
+
+
+  </div>
+
+ 
+</div>
+
+</body>
+</html>
+
+
